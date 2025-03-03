@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grant - Digital Resume</title>
     <style>
-        /* General Styling */
+        /* Background Styling */
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: black;
+            background-color: #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Resume Container */
+        .resume {
+            background-color: white;
+            width: 800px;
+            padding: 40px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
         }
 
         /* Header Styling */
@@ -25,18 +35,17 @@
             font-size: 32px;
             font-weight: bold;
             color: green;
+            margin-bottom: 5px;
         }
 
-        /* Section Headers */
         h2 {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
             color: green;
             text-decoration: underline;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
-        /* Paragraph & List Styling */
         p, li {
             font-size: 16px;
             color: black;
@@ -50,34 +59,50 @@
 </head>
 <body>
 
-    <header>
-        <h1>Grant</h1>
-    </header>
+    <div class="resume">
+        <header>
+            <h1>Grant Harper</h1>
+        </header>
 
-    <section>
-        <h2>Education</h2>
-        <p><strong>University Name</strong> – Degree (Year)</p>
-        <p>Relevant coursework: Course 1, Course 2, Course 3</p>
-    </section>
+        <section>
+            <h2>Education</h2>
+            <p><strong>Mississippi State University</strong> – Bachelor of Science in Electrical Engineering (Dec. 2025)</p>
+            <p>Relevant coursework: [Capstone Design], [Elecrtonics], [Circuits], [Data Structures]</p>
+        </section>
 
-    <section>
-        <h2>Job Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Job Skills</h2>
+            <ul>
+                <li>Front-End Web Development (HTML, CSS, Javascript)</li>
+                <li>PCB Design</li>
+                <li>Programming (C, C++, Python)</li>
+                <li>Command Line</li>
+                <li>MS Office</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Job Experience</h2>
-        <p><strong>Company Name</strong> – Job Title (Year - Year)</p>
-        <p>Responsibilities and achievements:</p>
-        <ul>
-            <li>Achievement 1</li>
-            <li>Achievement 2</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Job Experience</h2>
+            <p><strong>Trideum</strong> – Electrical Engineering Intern (Summers 2022 - Present)</p>
+            <ul>
+                <li>PCB Design.</li>
+                <li>Radio Communication.</li>
+                <li>Created Cable Tester via Arduino.</li>
+                <li>Helped Design UX for Website.</li>
+                <li>Hardware Integration.</li>
+
+            </ul>
+
+            <p><strong>Senior Design Project</strong> – (2025)</p>
+            <ul>
+                <li>Designed A system for smart-home pipe monitoring.</li>
+                <li>Sensors Bluetooth Low Energy communication.</li>
+                <li>Databasing and Communication via push notifications to user.</li>
+                <li>Developed a mobile app for Databasing and visualizing sensor data with AR.</li>
+
+            </ul>
+        </section>
+    </div>
 
 </body>
 </html>
