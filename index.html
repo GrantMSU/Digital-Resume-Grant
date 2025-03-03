@@ -59,14 +59,22 @@
         .education {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 30px;
         }
 
         .education img {
-        max-width: 200px; /* Adjust max width to a reasonable size */
-        width: 100%; /* Ensure the image scales down if needed */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100px;
+        width: 100px;
         border-radius: 8px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        }
+
+        .education-text {
+        flex: 1;
         }
 
     </style>
